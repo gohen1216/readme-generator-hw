@@ -48,7 +48,29 @@ const promptUser = () => {
 };
 
 const generatereadme = (answers) =>
-  ``;
+  `# ${answers.title}
+
+  ${answers.desc}
+  
+  ## Installation
+  
+  ${answers.install}
+  
+ 
+  ## Usage
+  
+  ${answers.usage}
+  
+  ## Contributing
+
+  ${answers.contributing}
+  
+  ## Test
+  
+  ${answers.test}
+  
+  ## License
+  [MIT](https://choosealicense.com/licenses/mit/)`;
 
 // Bonus using writeFileAsync as a promise
 const init = () => {
