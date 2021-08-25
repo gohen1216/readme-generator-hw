@@ -34,7 +34,7 @@ const promptUser = () => {
     {
       name: 'license',
       message: 'What license have you chosen?',
-    type: 'list',options: ["MIT","APACHE 2.0"]
+    type: 'list',choices: ["MIT","APACHE 2.0"]
     },
     {
       name: 'github',
@@ -53,7 +53,10 @@ const generatereadme = (answers) =>
 // Bonus using writeFileAsync as a promise
 const init = () => {
   promptUser()
-    .then((answers) => writeFileAsync('./sample/README.md', generatereadme(answers)))
+    .then((answers) => {
+      console.log (answers)
+      return writeFileAsync('./sample/README.md', generatereadme(answers))
+    })
     .then(() => console.log('Successfully wrote readme to sample folder'))
     .catch((err) => console.error(err));
 };
