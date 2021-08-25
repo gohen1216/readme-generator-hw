@@ -68,9 +68,16 @@ const generatereadme = (answers) =>
   ## Test
   
   ${answers.test}
-  
+
   ## License
-  [MIT](https://choosealicense.com/licenses/mit/)`;
+  ${answers.license}
+  
+  ## Questions
+  [${answers.github}](https://github.com/${answers.github})
+  you can contact me at [${answers.email}](mailto:${answers.email})
+
+  
+  `;
 
 // Bonus using writeFileAsync as a promise
 const init = () => {
