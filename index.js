@@ -34,7 +34,7 @@ const promptUser = () => {
     {
       name: 'license',
       message: 'What license have you chosen?',
-    type: 'list',choices: ["MIT","APACHE 2.0"]
+    type: 'list',choices: ["MIT","APACHE 2.0","GNU General Public License v3.0","BSD 2-Clause Simplified License","BSD 3-Clause New or Revised License","Boost Software License 1.0","Eclipse Public License 2.0","GNU Affero General Public License v3.0","GNU General Public License v2.0", "GNU Lesser General Public License v2.1","Mozilla Public License 2.0","The Unlicense"]
     },
     {
       name: 'github',
@@ -52,6 +52,19 @@ const generatereadme = (answers) =>
 
   ${answers.desc}
   
+  ## Table of contents
+  [Installation](#installation)
+ 
+  [Usage](#usage)
+
+  [Contributing](#contributing)
+
+  [Test](#test)
+
+  [License](#license)
+
+  [Questions](#questions)
+
   ## Installation
   
   ${answers.install}
@@ -71,7 +84,7 @@ const generatereadme = (answers) =>
 
   ## License
   ${answers.license}
-  
+
   ## Questions
   [${answers.github}](https://github.com/${answers.github})
   you can contact me at [${answers.email}](mailto:${answers.email})
