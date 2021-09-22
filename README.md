@@ -1,7 +1,7 @@
 # readme-generator-hw
-# readme generator
 
   an app that allows you to have a readme generated 
+  
   
   ## Table of contents
   [Installation](#installation)
@@ -31,7 +31,7 @@ https://user-images.githubusercontent.com/78391981/134400454-d312e1fe-c13f-4e72-
   ## Contributing
 
 
-  sanusi cole
+  Sanusi Cole
   
   ## Test
   
